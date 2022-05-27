@@ -113,8 +113,40 @@
 
 .flex-container-end {
     display: flex;
+    padding:50px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');/*url('./images/download.jpg');*/
 }
 .flex-container-end>img{
-    background-color:black;
+    max-width:10%
+}
+
+.flex-container-end-col1{
+
+}
+.flex-container-end-col1>a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-family:"Times New Roman";
+    padding:1%;
+    margin:40px;
+    text-align:center;
+}
+.flex-container-end-col1>a:hover{
+    font-weight:bold;
+}
+.flex-container-end-col1>button{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-family:"Times New Roman";
+    border:none;background-color:transparent;
+    padding:1%;
+    margin:40px;
+    text-align:center;
+    cursor:pointer;
+}
+.flex-container-end-col1>button:hover{
+    font-weight:bold;
+    cursor:pointer;
 }
