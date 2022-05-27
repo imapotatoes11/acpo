@@ -29,7 +29,7 @@
 
 /*HEADER*/
 .content1{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/download.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('')/*url('./images/download.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
