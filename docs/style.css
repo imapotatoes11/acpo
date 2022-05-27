@@ -28,11 +28,11 @@
 
 
 .content1{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');/*url('./images/download.jpg');*/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://static.wikia.nocookie.net/6c588f6e-7c79-4c6f-be27-77d3a0f8aef8/scale-to-width/755');/*url('./images/download.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding:10px;
+    padding:100px;
 }
 .content1_text{
     color: white;
@@ -41,19 +41,7 @@
     font-family: "Helvetica";
 }
 
-.content2{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');/*url('./images/download.jpg');*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding:20px;
-}
-.content2_text{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-family: "Helvetica";
-}
+
 
 .flex-container {
     display: flex;
@@ -64,12 +52,69 @@
     /*background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ybFUaSs2XIoreuJ1Ukbb05qFPV1uROBokWuZ2Xcovg&s');/*url('./images/download.jpg');*/
     margin: 15px;
     text-align:center;
-    padding-left:75px;
-    padding-right:75px;
-    padding-top:75px;
-    padding-bottom:75px;
+    padding-left:10%;
+    padding-right:19%;
+    padding-top:10%;
+    padding-bottom:10%;
     font-size: 30px;
     text-decoration:none;
     color:white;
+    background-position:center;
+    background-size:140%;
+    background-repeat:no-repeat;
+    justify-content: center;
 }
-.flex-container1{background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://image.shutterstock.com/image-photo/smiling-young-middle-eastern-man-260nw-2063524544.jpg');}
+
+.flex-container1{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://static.boredpanda.com/blog/wp-content/uploads/2017/12/funny-weird-wtf-stock-photos-19-5a3926af95d9d__700.jpg');
+    transition:0.4s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.flex-container1:hover{
+    background-size:120%;
+}
+
+.flex-container2{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.pixsy.com/wp-content/uploads/2016/06/Underwater-Nun.jpg');
+    transition:0.3s;
+}
+.flex-container2:hover{
+    background-size:120%;
+}
+
+.flex-container3{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://image.shutterstock.com/display_pic_with_logo/539572/157354478/stock-photo-funny-man-with-watermelon-helmet-and-googles-looks-like-a-parasitic-caterpillar-157354478.jpg');
+    transition:0.3s;
+}
+.flex-container3:hover{
+    background-size:120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-container-end {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');/*url('./images/download.jpg');*/
+}
+.flex-container-end>img{
+    background-color:black;
+}
