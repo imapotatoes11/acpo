@@ -1347,22 +1347,77 @@
 -->
 </article>
 <style>
-  #meet {
+  #loweredSemitone{
     text-align: center;
   }
-  #image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 5px solid #001724;
-    object-fit: contain;
+  #formorsmth {
+    margin-left: 20%;
   }
-  #pCenter {
-    text-align: center;
+  #test {
+    display: none;
+  }
+  #highlight {
+    background-color: red;
+  }
+  #ahh:focus {
+    background-color: blue !important;
+  }
+  .yes {
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 0.8rem 1rem !important;
+    height: 4rem;
   }
 </style>
 
-
+<section>
+  <h2 id="loweredSemitone">Donate To The Cause</h2>
+  <form id="formorsmth">
+    <p style="font-size: 25px;">Contribution</p>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$15</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$30</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$50</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$100</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$500</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$1,000</button>
+    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$3,325</button>
+    <button id="ahh" type="button" onclick="show()" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary">Other</button>
+    <input id='test' class="yes" type="text" placeholder="Amount: ">
+    <p style="font-size: 25px;">Name</p>
+    <input type="text" class="yes" style="width: 39%" placeholder="First Name">
+    <input type="text" class="yes" style="width: 39%" placeholder="Last Name">
+    <br>
+    <p style="font-size: 25px;">Email</p>
+    <input type="email" class="yes" style="width: 78%" placeholder="Email">
+    <p style="font-size: 25px;">Phone</p>
+    <input type="text" class="yes" style="width: 78%" placeholder="Phone Number">
+    <p style="font-size: 25px;">Address</p>
+    <input type="text" class="yes" style="width: 78%" placeholder="Street Address">
+    <br><br>
+    <input type="text" class="yes" style="width: 26%" placeholder="City">
+    <input type="text" class="yes" style="width: 26%" placeholder="" value="Ontario" readonly>
+    <input type="text" class="yes" style="width: 25.5%" placeholder="Postal Code">
+    <p style="font-size: 25px;">Credit Card</p>
+    <input type="text" class="yes" style="width: 38%" placeholder="Card Number">
+    <input type="month" class="yes" style="width: 20%" placeholder="Expiry Date">
+    <input type="text" class="yes" style="width: 19.5%" placeholder="CVC">
+    <br><br>
+    <input type="text" class="yes" style="width: 78%" placeholder="Cardholder Name">
+    <br><br>
+    <p><button style="position: absoulute; display: flex; justify-content: center; text-align: center !important; left:33.25%;" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" type="reset">Submit</button></p>
+    
+  </form>
+</section>
+<script>
+  var x = document.getElementById("test")
+  function thingy() {
+    console.log("lfjadsk;fjlasdjf")
+    document.getElementById("test").style.display = "none";
+  }
+  function show() {
+    console.log("lfjadsk;fjlasdjf")
+    x.style.display = "inline-block"
+  }
+</script>
 
       </main>
       <script type="text/javascript">
