@@ -67,7 +67,7 @@
     <!-- This is Squarespace. --><!-- dachshund-rhino-6e22 -->
 <base href="">
 <meta charset="utf-8">
-<title>Meet The Other Members</title>
+<title>Donate</title>
 <link rel="shortcut icon" type="image/x-icon" href="Website_Logo.ico">
 <link rel="canonical" href="https://dachshund-rhino-6e22.squarespace.com">
 <meta property="og:site_name" content="NSO">
@@ -1138,7 +1138,7 @@
 
 
 
-                          <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6291068185bfc84d2b4c38af"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1653671779428_3601"><div class="sqs-block-content"><h1 style="text-align:center;white-space:pre-wrap;color:white !important;">Meet The Other Members</h1>
+                          <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6291068185bfc84d2b4c38af"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1653671779428_3601"><div class="sqs-block-content"><h1 style="text-align:center;white-space:pre-wrap;color:white !important;">Donate</h1>
 
 
                     </div></div><div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-0a0e710a9d29f90c9afd"><div class="sqs-block-content">
@@ -1348,22 +1348,60 @@
 -->
 </article>
 <style>
-  #meet {
+  #yes {
     text-align: center;
+    font-size: 30px;
   }
-  #image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 5px solid #001724;
-    object-fit: contain;
+  #donatePage {
+    font-size: 20px;
+    margin-left: 10%;
   }
-  #pCenter {
-    text-align: center;
+  #buttons {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .active {
+    background-color: red !important;
+    border-radius: 13%;
+  }
+  #test {
+    padding: 0.7rem 1.3rem;
+    width: 15%;
   }
 </style>
-
-
+<section>
+  <h4 id="yes">Please donate to fund the New Socialist Party of Ontario<h4>
+  <form id="donatePage">
+    <p>Contribution: </p>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $15  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $30  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $50  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $100  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $500  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $1,000  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:none()">  $3,325  </button>
+    <button class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" id="buttons" type="button" onclick="javascript:show()">  Other  </button>
+    <input id="test" type="number" placeholder="Amount: " style="display: none;">
+    <p id="limit" style="font-size: 15px !important; color: white !important;">Uh Oh, donation cannot exceed $3,325</p>
+  </form>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+  var x = document.getElementById("test")
+  $(document).ready(function () {
+  	$('button').on('click', function() {
+      $('button').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+  function none() {
+    x.style.display = "none";
+  }
+  function show() {
+    x.style.display = "inline-block";
+    console.log("faslk;jdf;lj")
+  }
+</script>
 
       </main>
       <script type="text/javascript">
