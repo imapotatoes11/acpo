@@ -48,15 +48,16 @@
 
   }
 
-  #button {
+  /*#button {
     background-color: !important;
-  }
+  }*/
 
   button {
 
     font-family: "Reem Kufi" !important;
 
   }
+
 
 </style>
 
@@ -1393,6 +1394,7 @@
   }
   #test {
     display: none;
+    width:200px;
   }
   #highlight {
     background-color: red;
@@ -1407,11 +1409,12 @@
   }
 </style>
 
+
 <section>
   <h2 id="loweredSemitone">Donate To The Cause</h2>
   <form id="formorsmth">
     <p style="font-size: 25px;">Contribution</p>
-    <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$15</button>
+    <button id="ahh" type="button"class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$15</button>
     <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$30</button>
     <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$50</button>
     <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$100</button>
@@ -1419,7 +1422,7 @@
     <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$1,000</button>
     <button id="ahh" type="button" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary" onclick="thingy()" >$3,325</button>
     <button id="ahh" type="button" onclick="show()" class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary">Other</button>
-    <input id='test' class="yes" type="number" min="3" max="3325" placeholder="Amount: ">
+    <input id='test' class="yes" type="number" min="3" max="3325" inputmode="numeric" oninput="validity.valid||(value='3325');" placeholder="Amount: " >
     <p style="font-size: 25px;">Name</p>
     <input type="text" class="yes" style="width: 39%" placeholder="First Name">
     <input type="text" class="yes" style="width: 39%" placeholder="Last Name">
