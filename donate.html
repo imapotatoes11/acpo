@@ -1431,17 +1431,20 @@
     <p style="font-size: 25px;">Email</p>
     <input type="email" class="yes" style="width: 78%" placeholder="Email">
     <p style="font-size: 25px;">Phone</p>
-    <input type="text" class="yes" style="width: 78%" placeholder="Phone Number">
+    <div type="clear: both;">
+    <p2>(1)+</p2>
+    <input type="number" class="yes" style="width: 78%" min="0" max="9999999999" oninput="validity.valid||(value='');" placeholder="Phone Number">
+    </div>
     <p style="font-size: 25px;">Address</p>
     <input type="text" class="yes" style="width: 78%" placeholder="Street Address">
     <br><br>
     <input type="text" class="yes" style="width: 26%" placeholder="City">
-    <input type="text" class="yes" style="width: 26%" placeholder="" value="Ontario" readonly>
+    <input type="text" class="yes" style="width: 26%" placeholder="Province" value="Ontario" readonly>
     <input type="text" class="yes" style="width: 25.5%" placeholder="Postal Code">
     <p style="font-size: 25px;">Credit Card</p>
-    <input type="text" class="yes" style="width: 38%" placeholder="Card Number">
+    <input type="number" class="yes" style="width: 38%" min="0" max="9999999999999999" oninput="validity.valid||(value='0');" placeholder="Card Number">
     <input type="month" class="yes" style="width: 20%" placeholder="Expiry Date">
-    <input type="text" class="yes" style="width: 19.5%" placeholder="CVC">
+    <input type="number" class="yes" min="0" max="999" oninput="validity.valid||(value='999');" style="width: 19.5%" placeholder="CVC">
     <br><br>
     <input type="text" class="yes" style="width: 78%" placeholder="Cardholder Name">
     <br><br>
