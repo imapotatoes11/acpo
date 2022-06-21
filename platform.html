@@ -1366,6 +1366,7 @@
   #dropdown {
     margin-left: auto;
     margin-right: auto;
+  cursor:pointer!important;
     
     /*border:5px solid;*/
   }
@@ -1395,16 +1396,14 @@
       $("table").click(function(event) {
           event.stopPropagation();
           var $target = $(event.target);
-          if ( $target.closest("td").attr("colspan") > 1 ) {
+          if ( $target.closest("h3").attr("colspan") > 1 ) {
               $target.slideUp();
           } else {
               $target.closest("tr").next().find("h4").slideToggle();
           }
       });
   });
-  function change(huh) {
-    document.getElementById(huh).innerHTML = "-"
-  }
+
 
 </script>
 <section>
@@ -1441,6 +1440,53 @@
   </table>
 
 
+  <script>
+    function clickHandler1() {
+        if (document.getElementById("yes11").innerHTML == "+") {
+        document.getElementById("yes11").innerHTML = "-"}
+        else {
+          document.getElementById("yes11").innerHTML = "+"
+        }
+    }
+    function clickHandler2() {
+        if (document.getElementById("yes22").innerHTML == "+") {
+        document.getElementById("yes22").innerHTML = "-"}
+        else {
+          document.getElementById("yes22").innerHTML = "+"
+        }
+    }
+    function clickHandler3() {
+        if (document.getElementById("yes33").innerHTML == "+") {
+        document.getElementById("yes33").innerHTML = "-"}
+        else {
+          document.getElementById("yes33").innerHTML = "+"
+        }
+    }
+    function clickHandler4() {
+        if (document.getElementById("yes44").innerHTML == "+") {
+        document.getElementById("yes44").innerHTML = "-"}
+        else {
+          document.getElementById("yes44").innerHTML = "+"
+        }
+    }
+    function clickHandler5() {
+        if (document.getElementById("yes55").innerHTML == "+") {
+        document.getElementById("yes55").innerHTML = "-"}
+        else {
+          document.getElementById("yes55").innerHTML = "+"
+        }
+    }
+    var yes1 = document.getElementById("yes1")
+    yes1.addEventListener('click', clickHandler1)
+    var yes2 = document.getElementById("yes2")
+    yes2.addEventListener('click', clickHandler2)
+    var yes3 = document.getElementById("yes3")
+    yes3.addEventListener('click', clickHandler3)
+    var yes4 = document.getElementById("yes4")
+    yes4.addEventListener('click', clickHandler4)
+    var yes5 = document.getElementById("yes5")
+    yes5.addEventListener('click', clickHandler5)
+  </script>
 <br>
   <hr style="width: 90%">
 </section>
