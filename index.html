@@ -3,6 +3,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Reem Kufi" rel="stylesheet">
 <style>
+
+
   #asldfa {
 
     font-family: "Reem Kufi" !important;
@@ -481,18 +483,18 @@
                 <div class="header-nav-wrapper">
                   <nav class="header-nav-list">
 
-                    
+
 
                     <div class="header-nav-item header-nav-item--collection" style="opacity:0%!important;">
                       <a href="Logo/android-chrome-512x512.png" data-animation-role="header-element">
-                
+
                         logo
                       </a>
                     </div>
 
 <!--<div class="header-nav-item header-nav-item--collection" style="opacity:0%!important;">
                       <a href="https://imapotatoes11.github.io/acpo/docs/x.html" data-animation-role="header-element">
-                
+
                         more
                       </a>
                     </div>-->
@@ -1812,24 +1814,13 @@
           data-animation-role="image"
         >
 
+
+          <div style="
+          ">
           <video class="list-image">
             <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
           </video>
-          <div style="
-          ">
-            <img
-
-              data-image-focal-point=","
-              style="
-
-              "
-              alt=""
-              data-src="alok.png" data-image-dimensions="2500x1518" data-image-focal-point="0.5,0.5" alt="20140301_Trade-151_012-2.jpg"
-              class="list-image"
-              data-load="false"
-              data-mode="cover"
-              data-use-advanced-positioning="true"
-            />
+          <img style="border-radius: 50% !important; object-position: 50% 50%; object-fit: cover; width: 100px !important; height: 100px !important;" class="list-image" src="alok.png" >
           </div>
         </div>
       </div>
@@ -1857,7 +1848,7 @@
             max-width: 100%;
           "
         >
-          <p class="" style="white-space:pre-wrap;">Meet the leader of our party</p>
+          <p class="" style="white-space:pre-wrap;"></p>
         </div>
 
 
@@ -1883,6 +1874,7 @@
               sqs-button-element--primary
 
           "
+          style="background-color: #40A5D8"
           href="theLeader.html"
 
         >More About Alok Mantri</a>
@@ -1986,7 +1978,7 @@
 
           "
           href="https://drive.google.com/file/d/1CPlzW5C8yaKJcMyZMws3JTvnhhca05ql/preview"
-
+          style="background-color: #40A5D8"
         >Watch in full screen</a>
       </div>
 
@@ -2084,7 +2076,7 @@
           "
           href="https://drive.google.com/file/d/1HFEqEtBLKKrtdGuRKufd4ZMIR5rYLnRC/preview
           "
-
+          style="background-color: #40A5D8"
         >Watch in full screen</a>
       </div>
 
@@ -2196,30 +2188,147 @@
 
 
       </div>
-      <div data-animation-role="button" class="newsletter-form-button-wrapper submit-wrapper" style="vertical-align: middle;">
-        <button class="
+      <div data-animation-role="button" class="newsletter-form-button-wrapper submit-wrapper" style="vertical-align: middle;" style="background-color: #40A5D8">
+        <button
+            id="myBtn"
+            class="
             newsletter-form-button
             sqs-system-button
             sqs-editable-button-layout
             sqs-editable-button-style
             sqs-editable-button-shape
             sqs-button-element--primary"
-            onclick="clearaaaaa()"
+            style="background-color: #40A5D8 !important"
             value="Sign Up" type="reset">
-          <span class="newsletter-form-spinner sqs-spin light large"></span>
-          <span class="newsletter-form-button-label">Sign Up</span>
+          <span class="newsletter-form-spinner sqs-spin light large" ></span>
+          <span class="newsletter-form-button-label" >Sign Up</span>
           <span class="newsletter-form-button-icon"></span>
         </button>
       </div>
-
-        <div class="model"></div>
-
+      <p id="uniqueIdGoBrr" style="color: red !important;"></p>
 
     </div>
-    <div class="newsletter-form-footnote"></div>
-    <div class="hidden form-submission-text">Thank you!</div>
-    <div class="hidden form-submission-html" data-submission-html=""></div>
   </form>
+
+  <!-- My Popup Box Code -->
+  <style>
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    color: black;
+  }
+
+  .modal-body {padding: 2px 16px;}
+
+  </style>
+  </head>
+  <body>
+
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="text-align: center;">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 style="text-align: center;">Thank You For Signing Up!</h2>
+        <img style="text-align: center; width: 20%; height: 20%;" src="Logo/android-chrome-512x512.png">
+      </div>
+      <div class="modal-body">
+        <h3 style="text-align: center;">You Will Shortly Be Recieving A Confrimation Email</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+
+  // When the user clicks the button, open the modal
+
+  btn.onclick = function() {
+    var x = document.getElementById("uniqueIdGoBrr")
+    if (document.getElementById("email1").value != "" && document.getElementById("email2").value != "" && document.getElementById("email-yui_3_17_2_1_1552579698432_3881-field").value != "") {
+      modal.style.display = "block";
+      x.innerHTML = ""
+    } else {
+      console.log("ajflsakjdk")
+      x.innerHTML = "Uhh oh, you did not complete the form"
+    }
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  </script>
 
 
 
@@ -2854,19 +2963,19 @@
 
 <style>
   #toLearnMore3 {
-    background-color: #1E6690;
+    background-color: #1E6690 !important;
   }
   #toLearnMore4 {
-    background-color: #40a5d8;
+    background-color: #40a5d8 !important;
   }
   #toLearnMore5 {
-    background-color: #A0DCFF;
+    background-color: #A0DCFF !important;
   }
   #toLearnMore2 {
-    background-color: #02314C;
+    background-color: #02314C !important;
   }
   #toLearnMore1 {
-    background-color: #001928
+    background-color: #001928 !important;
   }
 </style>
 
@@ -3768,4 +3877,6 @@ text-align:center;
 
 
   </body>
+
+
 </html>
